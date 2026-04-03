@@ -1,1 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Police Playfair Display pour la navbar */
+header nav ul li a {
+  font-family: 'Playfair Display', serif;
+}
