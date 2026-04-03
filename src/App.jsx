@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import Navbar from './components/Navbar.jsx'
+import Footer from './components/footer.jsx'
 
 function App() {
   const eventDate = useMemo(() => new Date('2026-04-04T20:00:00'), [])
@@ -106,6 +107,7 @@ function App() {
           </a>
         </section>
       </main>
+      <Footer />
     </div>
   )
 }

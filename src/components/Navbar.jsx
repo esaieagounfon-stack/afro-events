@@ -7,7 +7,7 @@ export default function Navbar() {
     <header className="fixed top-0 z-50 w-full border-b border-fuchsia-500/30 bg-slate-950/90 backdrop-blur-md transition-all duration-300">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
         <a href="#accueil" className="flex items-center">
-          <img src="/logo Afro.jfif" alt="AfroEvent" className="h-10 w-[15px]" />
+          <img src="/logo Afro.jfif" alt="AfroEvent" className="h-8 w-20" />
         </a>
 
         <button
