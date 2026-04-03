@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import Navbar from './components/Navbar.jsx'
 
 function App() {
-  const eventDate = useMemo(() => new Date('2026-04-20T20:00:00'), [])
+  const eventDate = useMemo(() => new Date('2026-04-04T20:00:00'), [])
   const [countdown, setCountdown] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 })
 
   useEffect(() => {
@@ -28,7 +28,7 @@ function App() {
     <div className="min-h-screen bg-slate-950 text-white">
       <Navbar />
 
-      <main className="mx-auto max-w-6xl px-4 py-10 lg:py-16">
+      <main className="mx-auto max-w-6xl px-4 py-10 pt-20 lg:py-16 lg:pt-24">
         <section id="accueil" className="rounded-3xl border border-fuchsia-500/30 bg-gradient-to-br from-slate-900 via-slate-800 to-fuchsia-950 p-6 shadow-2xl shadow-fuchsia-900/40 md:p-10">
           <div className="grid gap-8 lg:grid-cols-[1fr_360px] lg:items-center">
             <div>
@@ -54,19 +54,19 @@ function App() {
               <div className="mt-8 grid w-full max-w-xs grid-cols-4 gap-2 sm:max-w-md sm:grid-cols-4">
                 <div className="rounded-xl bg-black/40 p-3 text-center">
                   <div className="text-2xl font-bold text-fuchsia-300">{countdown.days}</div>
-                  <div className="text-xs uppercase text-slate-300">Jours</div>
+                  <div className="text-xs uppercase text-slate-300">Jrs</div>
                 </div>
                 <div className="rounded-xl bg-black/40 p-3 text-center">
                   <div className="text-2xl font-bold text-fuchsia-300">{countdown.hours}</div>
-                  <div className="text-xs uppercase text-slate-300">Heures</div>
+                  <div className="text-xs uppercase text-slate-300">Hrs</div>
                 </div>
                 <div className="rounded-xl bg-black/40 p-3 text-center">
                   <div className="text-2xl font-bold text-fuchsia-300">{countdown.minutes}</div>
-                  <div className="text-xs uppercase text-slate-300">Minutes</div>
+                  <div className="text-xs uppercase text-slate-300">Mins</div>
                 </div>
                 <div className="rounded-xl bg-black/40 p-3 text-center">
                   <div className="text-2xl font-bold text-fuchsia-300">{countdown.seconds}</div>
-                  <div className="text-xs uppercase text-slate-300">Secondes</div>
+                  <div className="text-xs uppercase text-slate-300">Secs</div>
                 </div>
               </div>
             </div>
